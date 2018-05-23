@@ -149,6 +149,10 @@
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-progressbar-3.3.4.min.css" />
+    <Content Include="Content\bootstrap-progressbar\bootstrap-progressbar.js" />
+    <Content Include="Content\bootstrap-progressbar\bootstrap-progressbar.min.js" />
+    <Content Include="Content\bootstrap-progressbar\css\bootstrap-progressbar-3.3.4.css" />
+    <Content Include="Content\bootstrap-progressbar\css\bootstrap-progressbar-3.3.4.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -215,6 +219,15 @@
     <Content Include="Content\font-awesome\scss\_screen-reader.scss" />
     <Content Include="Content\font-awesome\scss\_stacked.scss" />
     <Content Include="Content\font-awesome\scss\_variables.scss" />
+    <Content Include="Content\bootstrap-progressbar\.bower.json" />
+    <Content Include="Content\bootstrap-progressbar\bower.json" />
+    <Content Include="Content\bootstrap-progressbar\CHANGELOG.md" />
+    <Content Include="Content\bootstrap-progressbar\CONTRIBUTORS.md" />
+    <Content Include="Content\bootstrap-progressbar\less\bootstrap-progressbar-3.3.0-3.x.x.less" />
+    <Content Include="Content\bootstrap-progressbar\LICENSE" />
+    <Content Include="Content\bootstrap-progressbar\package.json" />
+    <Content Include="Content\bootstrap-progressbar\README.md" />
+    <Content Include="Content\bootstrap-progressbar\scss\bootstrap-progressbar-3.3.0-3.x.x.scss" />
     <None Include="Properties\PublishProfiles\chainreaction - Web Deploy.pubxml" />
     <Content Include="Images\american-express.png" />
     <Content Include="Images\cropper.jpg" />

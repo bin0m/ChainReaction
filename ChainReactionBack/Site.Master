@@ -51,7 +51,7 @@
             <!-- gauge.js -->
             <script src="../Scripts/gauge.min.js"></script>
             <!-- bootstrap-progressbar -->
-            <script src="../Scripts/bootstrap-progressbar.min.js"></script>
+            <script src="../Content/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
             <!-- iCheck -->
             <script src="../Scripts/icheck.min.js"></script>
             <!-- Skycons -->
