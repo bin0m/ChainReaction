@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using ChainReactionBack.Models;
 using RDotNet;
 using System.Diagnostics;
+using System.Data.SqlClient;
 
 namespace ChainReactionBack
 {
@@ -21,16 +22,66 @@ namespace ChainReactionBack
         public int smartcitycoin_price = 1;
         public int PriceETH = 1;
 
+        public List<string> recResults = new List<string>();
+        public List<forGraph> forGraphs = new List<forGraph>();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            Process.Start("");
+            //Process.Start("");
             CurrencyLoad();
+            DataStatsLoad();
+
         }
 
         private void DataStatsLoad()
         {
+            var connectionString = "Server=tcp:chainreaction.database.windows.net,1433;Initial Catalog=chainreaction;Persist Security Info=False;User ID=hacker;Password=kotbumnahpro4$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
 
+            // Create and open the connection in a using block. This
+            // ensures that all resources will be closed and disposed
+            // when the code exits.
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand("SELECT * from dbo.recResults", connection))
+                {
+
+                    try
+                    {
+                        connection.Open();
+                        SqlDataReader reader = command.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            recResults.Add(reader[1].ToString());
+                        }
+                        reader.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                    }
+                }
+                using (SqlCommand command = new SqlCommand("SELECT * from dbo.forGraph", connection))
+                {
+
+                    try
+                    {
+                        SqlDataReader reader = command.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            var forGraph = new forGraph();
+                            forGraph.Balance = reader.GetDouble(1);
+                            forGraph.Time = reader.GetDouble(2);
+                            forGraph.Changes = reader.GetDouble(3);
+                            forGraph.DynamicProfit = reader.GetDouble(4);
+                            forGraphs.Add(forGraph);
+                        }
+                        reader.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                    }
+                }
+            }
         }
 
         private void CurrencyLoad()

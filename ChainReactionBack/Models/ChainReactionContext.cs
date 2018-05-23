@@ -24,6 +24,7 @@ namespace ChainReactionBack.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<SmartContract> SmartContracts { get; set; }
+        public DbSet<recResult> recResults { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

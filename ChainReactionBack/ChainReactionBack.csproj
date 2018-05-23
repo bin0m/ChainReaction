@@ -358,8 +358,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ChainReactionContext.cs" />
+    <Compile Include="Models\forGraph.cs" />
+    <Compile Include="Models\recResult.cs" />
     <Compile Include="Models\SmartContract.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\startBalance.cs" />
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
