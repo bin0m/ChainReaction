@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+	<link rel="icon" href="../Images/favicon.ico" type="image/ico" />
 
     <title><%: Page.Title %> - ChainReaction</title>
 
@@ -24,8 +24,6 @@
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <%--Framework Scripts--%>
                 <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
                 <asp:ScriptReference Name="respond" />
                 <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
                 <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
@@ -41,45 +39,45 @@
         </asp:ScriptManager>
 
             <!-- jQuery -->
-            <script src="~/Scripts/jquery.min.js"></script>
+            <script src="../Scripts/jquery.min.js"></script>
             <!-- Bootstrap -->
-            <script src="~/Scripts/bootstrap.min.js"></script>
+            <script src="../Scripts/bootstrap.min.js"></script>
             <!-- FastClick -->
-            <script src="~/Scripts/fastclick.js"></script>
+            <script src="../Scripts/fastclick.js"></script>
             <!-- NProgress -->
-            <script src="~/Scripts/nprogress.js"></script>
+            <script src="../Scripts/nprogress.js"></script>
             <!-- Chart.js -->
-            <script src="~/Scripts/Chart.min.js"></script>
+            <script src="../Scripts/Chart.min.js"></script>
             <!-- gauge.js -->
-            <script src="~/Scripts/gauge.min.js"></script>
+            <script src="../Scripts/gauge.min.js"></script>
             <!-- bootstrap-progressbar -->
-            <script src="~/Scripts/bootstrap-progressbar.min.js"></script>
+            <script src="../Scripts/bootstrap-progressbar.min.js"></script>
             <!-- iCheck -->
-            <script src="~/Scripts/icheck.min.js"></script>
+            <script src="../Scripts/icheck.min.js"></script>
             <!-- Skycons -->
-            <script src="~/Scripts/skycons.js"></script>
+            <script src="../Scripts/skycons.js"></script>
             <!-- Flot -->
-            <script src="~/Scripts/jquery.flot.js"></script>
-            <script src="~/Scripts/jquery.flot.pie.js"></script>
-            <script src="~/Scripts/jquery.flot.time.js"></script>
-            <script src="~/Scripts/jquery.flot.stack.js"></script>
-            <script src="~/Scripts/jquery.flot.resize.js"></script>
+            <script src="../Scripts/jquery.flot.js"></script>
+            <script src="../Scripts/jquery.flot.pie.js"></script>
+            <script src="../Scripts/jquery.flot.time.js"></script>
+            <script src="../Scripts/jquery.flot.stack.js"></script>
+            <script src="../Scripts/jquery.flot.resize.js"></script>
             <!-- Flot plugins -->
-            <script src="~/Scripts/jquery.flot.orderBars.js"></script>
-            <script src="~/Scripts/jquery.flot.spline.min.js"></script>
-            <script src="~/Scripts/curvedLines.js"></script>
+            <script src="../Scripts/jquery.flot.orderBars.js"></script>
+            <script src="../Scripts/jquery.flot.spline.min.js"></script>
+            <script src="../Scripts/curvedLines.js"></script>
             <!-- DateJS -->
-            <script src="~/Scripts/date.js"></script>
+            <script src="../Scripts/date.js"></script>
             <!-- JQVMap -->
-            <script src="~/Scripts/jquery.vmap.js"></script>
-            <script src="~/Scripts/jquery.vmap.world.js"></script>
-            <script src="~/Scripts/jquery.vmap.sampledata.js"></script>
+            <script src="../Scripts/jquery.vmap.js"></script>
+            <script src="../Scripts/jquery.vmap.world.js"></script>
+            <script src="../Scripts/jquery.vmap.sampledata.js"></script>
             <!-- bootstrap-daterangepicker -->
-            <script src="~/Scripts/moment.min.js"></script>
-            <script src="~/Scripts/daterangepicker.js"></script>
+            <script src="../Scripts/moment.min.js"></script>
+            <script src="../Scripts/daterangepicker.js"></script>
 
             <!-- Custom Theme Scripts -->
-            <script src="~/Scripts/custom.js"></script>
+            <script src="../Scripts/custom.js"></script>
 	        <script type="text/javascript">
                 (function($,sr){
                     //$('#role-like').modal('show');
@@ -100,7 +98,7 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="../Images/img.jpg" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <h2>Захаров Станислав</h2>
@@ -153,7 +151,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/img.jpg" alt="">Захаров Станислав
+                    <img src="../Images/img.jpg" alt="">Захаров Станислав
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
