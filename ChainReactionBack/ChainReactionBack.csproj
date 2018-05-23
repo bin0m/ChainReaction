@@ -228,6 +228,7 @@
     <Content Include="Content\bootstrap-progressbar\package.json" />
     <Content Include="Content\bootstrap-progressbar\README.md" />
     <Content Include="Content\bootstrap-progressbar\scss\bootstrap-progressbar-3.3.0-3.x.x.scss" />
+    <Content Include="PrivateProfile.aspx" />
     <None Include="Properties\PublishProfiles\chainreaction - Web Deploy.pubxml" />
     <Content Include="Images\american-express.png" />
     <Content Include="Images\cropper.jpg" />
@@ -382,6 +383,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PrivateProfile.aspx.cs">
+      <DependentUpon>PrivateProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrivateProfile.aspx.designer.cs">
+      <DependentUpon>PrivateProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
